@@ -1,0 +1,25 @@
+{
+  "name": "mws-restaurant",
+  "version": "1.0.0",
+  "description": "Restaurant app, responsive, accessible and offline-first",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tsuna-mi/mws-restaurant.git"
+  },
+  "keywords": [
+    "restaurant",
+    "responsive",
+    "accessible",
+    "offline"
+  ],
+  "author": "Ana Gamito <belen_g_romero@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tsuna-mi/mws-restaurant/issues"
+  },
+  "homepage": "https://github.com/Tsuna-mi/mws-restaurant#readme"
+}
