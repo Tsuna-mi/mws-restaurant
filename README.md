@@ -40,7 +40,7 @@ After that, you need to have a simple HTTP server to serve up the site files on 
 - For python 2.x: `python -m SimpleHTTPServer 8000` (or with other port)
 - For python 3.x: `python3 -m http.server 8000` (or with other port)
 
-Or you can run other server of your preference. I usually work with npm packages, for that I use **http-server** node package. Easy to install with: `npm install http-server -g`. To run, inside the project directory, if you don't need more options: `http-server`
+Or you can run other server of your preference. I usually work with npm packages, for that I use **http-server** node package. Easy to install with: `npm install http-server -g`. To run, inside the project directory, if you don't need more options: `http-server -p 8000`
 See the different options at: [http-server](https://www.npmjs.com/package/http-server).
 
 With your server running, visit the site: `http://localhost:8000`.
