@@ -16,15 +16,15 @@ Make the provided site fully responsive. All of the page elements should be usab
 
 You will convert a site that looks like this:
 
-![initial Image app 1](./docs/starter-mobile-page-1.png)
+![initial Image app 1](./assets/docs/starter-mobile-page-1.png)
 
-![initial Image app 2](./docs/starter-mobile-page-2.png)
+![initial Image app 2](./assets/docs/starter-mobile-page-2.png)
 
 into a site that looks like this:
 
-![final Image app 1](./docs/finished-mobile-page-1.png)
+![final Image app 1](./assets/docs/finished-mobile-page-1.png)
 
-![final Image app 2](./docs/finished-mobile-page-1.png)
+![final Image app 2](./assets/docs/finished-mobile-page-1.png)
 
 **Make the site accessible**. Using what you've learned about web accessibility, ensure that alt attributes are present and descriptive for images. Add screen-reader-only attributes when appropriate to add useful supplementary text. Use semantic markup where possible, and aria attributes when semantic markup is not feasible.
 
