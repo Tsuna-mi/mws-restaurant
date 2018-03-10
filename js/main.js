@@ -2,7 +2,7 @@ let restaurants;
 let neighborhoods;
 let cuisines;
 let map;
-const markers = [];
+var markers = [];
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -166,6 +166,7 @@ createRestaurantHTML = (restaurant) => {
  * Add markers for current restaurants to the map.
  */
 addMarkersToMap = (restaurants = self.restaurants) => {
+  console.log(restaurants);
   restaurants.forEach((restaurant) => {
     // Add marker to the map
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.map);
