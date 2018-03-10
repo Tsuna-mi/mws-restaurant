@@ -1,7 +1,7 @@
 {
   "name": "mws-restaurant",
   "version": "1.0.0",
-  "description": "Restaurant app, responsive, accessible and offline-first",
+  "description": "Restaurant Reviews App for Udacity Mobile Web Specialist Nanodegree",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,8 @@
     "restaurant",
     "responsive",
     "accessible",
-    "offline"
+    "offline",
+    "offline-first"
   ],
   "author": "Ana Gamito <belen_g_romero@hotmail.com>",
   "license": "MIT",
