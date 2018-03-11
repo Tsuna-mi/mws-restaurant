@@ -24,8 +24,10 @@
   },
   "homepage": "https://github.com/Tsuna-mi/mws-restaurant#readme",
   "devDependencies": {
+    "browser-sync": "^2.23.6",
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.9.0"
+    "eslint-plugin-import": "^2.9.0",
+    "gulp": "^3.9.1"
   }
 }
