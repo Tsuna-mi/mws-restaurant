@@ -88,7 +88,7 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 
     const time = document.createElement('td');
     time.innerHTML = operatingHours[key];
-    time.className = 'time';
+    time.className = operatingHours[key] === 'Closed' ? 'time closed' : 'time';
     row.appendChild(time);
 
     hours.appendChild(row);
