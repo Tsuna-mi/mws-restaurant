@@ -28,7 +28,7 @@ body {
 ul,
 li {
   font-size: 10pt;
-  color: #333;
+  color: dimgray;
 }
 
 img {
@@ -77,9 +77,14 @@ section {
   display: block;
 }
 
+.shadow {
+  text-shadow: 2px 3px 2px rgba(0,0,0,0.4),
+               5px 5px 6px rgba(0,0,0,0.1);
+}
+
 .maincontent {
   background-color: #f3f3f3;
-  min-height: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -96,7 +101,7 @@ section {
 
 /* ====================== Navigation ====================== */
 nav {
-  width: 100%;
+  width: 100vw;
   height: 80px;
   background-color: #252831;
   text-align:center;
@@ -132,7 +137,8 @@ nav h1 a {
 /* Add a slash symbol (/) before/behind each list item */
 .breadcrumb li+li:before {
   padding: 6px;
-  color: dimgray;
+  color: white;
+  font-size: 25px;
   content: "/\00a0";
 }
 
@@ -151,24 +157,30 @@ nav h1 a {
 /* ====================== Map ====================== */
 .map {
   height: 400px;
-  width: 100%;
+  width: 100vw;
   background-color: #ccc;
 }
 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  width: 100%;
-  height: 50px;
-  background-color: #3397DB;
-  align-items: center;
+  width: 100vw;
+  /* height: 50px; */
+  background-color: orange;
+  padding: 20px;
+  /* align-items: center; */
 }
 
 .filter-options h2 {
   color: white;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 100;
+  letter-spacing: 2px;
   line-height: 1;
-  margin: 0 20px;
+  margin: 0 10px;
+}
+
+.filter {
+  display: flex;
 }
 
 .filter-options select {
@@ -288,6 +300,7 @@ nav h1 a {
   font-weight: 300;
   letter-spacing: 2px;
   line-height: 1.3;
+  min-height: 52px;
   margin: 20px 0 10px;
   text-transform: uppercase;
 }
@@ -331,13 +344,13 @@ nav h1 a {
 .inside .map {
   background-color: #ccc;
   /*height: 100%;*/
-  width: 100%;
+  width: 100vw;
 }
 
 .inside .footer {
   bottom: 0;
   position: absolute;
-  width: 100%;
+  width: 100vw;
 }
 
 .restaurant-name {
@@ -356,6 +369,7 @@ nav h1 a {
 
 .restaurant-container {
   padding: 15px 25px;
+  margin-bottom: 30px;
 }
 
 .restaurant-address {
@@ -481,10 +495,6 @@ nav h1 a {
   font-size: 14px;
   color: lightgray;
   font-weight: 200;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-               0px 8px 13px rgba(0,0,0,0.1),
-               0px 18px 23px rgba(0,0,0,0.1);
-
 }
 
 .reviews-list .rating {
