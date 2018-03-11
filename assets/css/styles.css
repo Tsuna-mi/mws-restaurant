@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* =========================== Common Styles =========================== */
+
 *,
 *::before,
 *::after {
@@ -77,22 +79,6 @@ section {
   display: block;
 }
 
-.shadow {
-  text-shadow: 2px 3px 2px rgba(0,0,0,0.4),
-               5px 5px 6px rgba(0,0,0,0.1);
-}
-
-.flex-layout {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .maincontent {
   background-color: #f3f3f3;
   width: 100vw;
@@ -111,7 +97,28 @@ section {
   width: 100vw;
 }
 
-/* ====================== Navigation ====================== */
+.shadow {
+  text-shadow: 2px 3px 2px rgba(0,0,0,0.4),
+               5px 5px 6px rgba(0,0,0,0.1);
+}
+
+.flex-layout {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rounded {
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+/* ============================ Navigation ============================ */
 nav {
   width: 100vw;
   height: 80px;
@@ -133,11 +140,13 @@ nav h1 a {
 }
 
 .breadcrumb {
-  padding: 20px 15px;
+  padding: 20px 25px;
   list-style: none;
   background-color: #eee;
   margin: 0;
 }
+
+/* ============================== Breadcrum ============================ */
 
 /* Display list items side by side */
 .breadcrumb li {
@@ -150,7 +159,11 @@ nav h1 a {
   padding: 6px;
   color: white;
   font-size: 25px;
-  content: "/\00a0";
+  font-weight: 100;
+  content: ">\0000a0";
+  text-shadow: 2px 3px 2px rgba(0,0,0,0.4),
+               5px 5px 6px rgba(0,0,0,0.1);
+
 }
 
 /* Add a color to all links inside the list */
@@ -165,14 +178,14 @@ nav h1 a {
   text-decoration: underline;
 }
 
-/* ====================== Map ====================== */
+/* ================================ Map ================================ */
 .map {
   height: 400px;
   width: 100vw;
   background-color: #ccc;
 }
 
-/* ====================== Restaurant Filtering ====================== */
+/* ======================= Restaurant Filtering ======================= */
 .filter-options {
   width: 100vw;
   background-color: orange;
@@ -204,12 +217,7 @@ nav h1 a {
   width: 200px;
 }
 
-.rounded {
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-
-/* ====================== Restaurant Listing - Cards ====================== */
+/* ==================== Restaurant Listing - Cards ====================== */
 .cards {
   background-color: #f3f3f3;
   list-style: none;
@@ -293,7 +301,7 @@ nav h1 a {
   text-transform: uppercase;
 }
 
-/* ====================== Restaurant Details ====================== */
+/* ======================== Restaurant Details ========================= */
 
 .restaurant-name {
   color: #f18200;
@@ -365,9 +373,15 @@ nav h1 a {
   bottom: 0;
 }
 
+.card__img img {
+  width: 100%;
+}
+
 .card__img:hover .fade-caption {
   opacity: 1;
 }
+
+/* ======================== Restaurant Reviews ========================= */
 
 .reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -451,6 +465,11 @@ nav h1 a {
     justify-content: center;
   }
 
+  .restaurant-container .card__img {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   .restaurant-hours {
     display: flex;
     flex-direction: row;
@@ -462,9 +481,12 @@ nav h1 a {
     margin: 5px;
   }
 
-  .restaurant-hours .day,
-  .restaurant-hours .time {
+  .restaurant-hours .day {
     padding-right: 0;
+    text-align: center;
+  }
+
+  .restaurant-hours .time {
     text-align: center;
   }
 }
@@ -473,5 +495,25 @@ nav h1 a {
   .cards__item,
   .reviews__item {
     max-width: 30%;
+  }
+  .maincontent {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .map {
+    width: 40vw;
+    height: 100%;
+    align-self: center;
+  }
+  .restaurant-container {
+    order: 0;
+    width: 60vw;
+  }
+  .map-container {
+    order: 1;
+  }
+  .reviews-container {
+    order: 2;
+    width: 100vw;
   }
 }
