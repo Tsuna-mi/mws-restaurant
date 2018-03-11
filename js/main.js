@@ -140,7 +140,7 @@ createRestaurantHTML = (restaurant) => {
   card.className = 'card';
   li.append(card);
   const image = document.createElement('img');
-  image.className = 'card__img';
+  image.className = 'card__img rounded';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   image.alt = `${restaurant.name}`;
   card.append(image);
@@ -170,7 +170,6 @@ createRestaurantHTML = (restaurant) => {
  * Add markers for current restaurants to the map.
  */
 addMarkersToMap = (restaurants = self.restaurants) => {
-  console.log(restaurants);
   restaurants.forEach((restaurant) => {
     // Add marker to the map
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.map);

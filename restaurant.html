@@ -7,7 +7,7 @@
   <meta name="author" content="Ana Gamito">
   <meta name="description" content="Restaurant Reviews App for Udacity Mobile Web Specialist Nanodegree">
   <!-- Normalize.css for better cross-browser consistency -->
-  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
   <!-- Main CSS file -->
   <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
   <title>Restaurant Info</title>
@@ -37,10 +37,12 @@
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section id="restaurant-container">
+    <section class="restaurant-container" id="restaurant-container">
       <h2 class="restaurant-name" id="restaurant-name"></h2>
-      <img class="card__img" id="restaurant-img">
-      <p class="restaurant-cuisine" id="restaurant-cuisine"></p>
+      <div class="card__img rounded">
+        <img id="restaurant-img">
+        <p class="restaurant-cuisine fade-caption" id="restaurant-cuisine"></p>
+      </div>
       <p class="restaurant-address" id="restaurant-address"></p>
       <table class="restaurant-hours" id="restaurant-hours"></table>
     </section>
