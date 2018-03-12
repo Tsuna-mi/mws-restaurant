@@ -470,7 +470,7 @@ nav h1 a {
     margin: 0 auto;
   }
 
-  .restaurant-hours {
+  .restaurant-hours tbody {
     display: flex;
     flex-direction: row;
   }
