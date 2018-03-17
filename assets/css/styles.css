@@ -285,7 +285,7 @@ nav h1 a {
 }
 
 .cards .cards__item a {
-  background-color: #f18200;
+  background-image: linear-gradient(to bottom right, #ffc600, #f66464);
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
