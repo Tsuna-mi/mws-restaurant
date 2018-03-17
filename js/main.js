@@ -147,7 +147,7 @@ createRestaurantHTML = (restaurant) => {
   const sourceWebp1 = document.createElement('source');
   sourceWebp1.type = 'image/webp';
   sourceWebp1.srcset = `public/img/${restaurant.id}-xl.webp, 
-                        media="(min-width:800px)"`;
+                        media="(min-width: 800px)"`;
   picture.append(sourceWebp1);
 
   const sourceWebp2 = document.createElement('source');

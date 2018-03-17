@@ -55,10 +55,65 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
 
-  const image = document.getElementById('restaurant-img');
+  const card = document.getElementById('restaurant-detail');
+
+  const picture = document.createElement('picture');
+  picture.className = 'card__img rounded';
+  card.append(picture);
+
+  const sourceWebp1 = document.createElement('source');
+  sourceWebp1.type = 'image/webp';
+  sourceWebp1.srcset = `public/img/${restaurant.id}-xl.webp, 
+                        media="(min-width: 800px)"`;
+  picture.append(sourceWebp1);
+
+  const sourceWebp2 = document.createElement('source');
+  sourceWebp2.type = 'image/webp';
+  sourceWebp2.srcset = `public/img/${restaurant.id}-l.webp, 
+                        media="(min-width: 600px)"`;
+  picture.append(sourceWebp2);
+
+  const sourceWebp3 = document.createElement('source');
+  sourceWebp3.type = 'image/webp';
+  sourceWebp3.srcset = `public/img/${restaurant.id}-m.webp, 
+                        public/img/${restaurant.id}-m@2x.webp 2x,
+                        media="(min-width: 400px)"`;
+  picture.append(sourceWebp3);
+
+
+  const sourceWebp4 = document.createElement('source');
+  sourceWebp4.type = 'image/webp';
+  sourceWebp4.srcset = `public/img/${restaurant.id}-s.webp, 
+                        public/img/${restaurant.id}-s@2x.webp 2x, 
+                        media="(min-width: 300px)"`;
+  picture.append(sourceWebp4);
+
+  const sourceJpg1 = document.createElement('source');
+  sourceJpg1.type = 'image/jpg';
+  sourceJpg1.srcset = `public/img/${restaurant.id}-xl.jpg
+                       media="(min-width: 800px)"`;
+  picture.append(sourceJpg1);
+
+  const sourceJpg2 = document.createElement('source');
+  sourceJpg2.type = 'image/jpg';
+  sourceJpg2.srcset = `public/img/${restaurant.id}-l.jpg, 
+                       media="(min-width: 600px)"`;
+  picture.append(sourceJpg2);
+
+  const sourceJpg3 = document.createElement('source');
+  sourceJpg3.type = 'image/jpg';
+  sourceJpg3.srcset = `public/img/${restaurant.id}-m.jpg, 
+                        public/img/${restaurant.id}-m@2x.jpg 2x,
+                        media="(min-width: 400px)"`;
+  picture.append(sourceJpg3);
+
+  const image = document.createElement('img');
   image.className = 'card__img rounded';
-  image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.srcset = `public/img/${restaurant.id}-s.jpg,
+                  public/img/${restaurant.id}-s@2x.jpg 2x,
+                  media="(min-width: 300px)"`;
   image.alt = `${restaurant.name} Restaurant image`;
+  picture.append(image);
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
