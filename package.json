@@ -28,6 +28,8 @@
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-responsive": "^2.9.0",
+    "gulp-webp": "^3.0.0"
   }
 }
