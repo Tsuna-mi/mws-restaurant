@@ -58,7 +58,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const image = document.getElementById('restaurant-img');
   image.className = 'card__img rounded';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  image.alt = `${restaurant.name}`;
+  image.alt = `${restaurant.name} Restaurant image`;
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
