@@ -34,7 +34,7 @@ img {
 }
 
 a {
-  color: #f18200;
+  color: #f99b2c;
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ section {
 
 .footer {
   background-color: #444;
-  color: #aaa;
+  color: #ccc;
   font-size: 1em;
   font-weight: 100;
   letter-spacing: 1px;
@@ -189,7 +189,7 @@ nav h1 a {
 }
 
 .filter-options h2 {
-  color: white;
+  color: #444;
   font-size: 1em;
   font-weight: 200;
   letter-spacing: 2px;
@@ -269,7 +269,7 @@ nav h1 a {
 }
 
 .cards .cards__item .card__title {
-  color: #f18200;
+  color: #de7b08;
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 2px;
