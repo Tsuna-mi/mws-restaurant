@@ -121,7 +121,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const image = document.createElement('img');
   image.className = 'card__img rounded';
   image.src = `public/img/${restaurant.id}-s.jpg`;
-  image.alt = `${restaurant.name} Restaurant image`;
+  image.alt = `${restaurant.name} Restaurant image: ${restaurant.description}`;
   picture.append(image);
 
   const cuisine = document.getElementById('restaurant-cuisine');

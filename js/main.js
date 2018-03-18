@@ -205,7 +205,7 @@ createRestaurantHTML = (restaurant) => {
   image.media = `(min-width: 320px) and (max-width: 400px), 
                  (min-width: 650px) and (max-width: 800px), 
                  (min-width: 950px) and (max-width: 1200px)`;
-  image.alt = `${restaurant.name} Restaurant image`;
+  image.alt = `${restaurant.name} Restaurant image: ${restaurant.description}`;
   picture.append(image);
 
   const name = document.createElement('h2');
