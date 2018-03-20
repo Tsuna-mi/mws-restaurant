@@ -518,7 +518,7 @@ nav h1 a {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .map {
+  .map-container.review .map {
     width: 40vw;
     height: 100%;
     align-self: center;
@@ -536,7 +536,7 @@ nav h1 a {
   .restaurant-hours tr {
     width: calc(100%/9);
   }
-  .map-container {
+  .map-container.review {
     order: 1;
   }
   .reviews-container {
