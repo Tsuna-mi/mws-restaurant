@@ -157,10 +157,15 @@ class DBHelper {
    */
   static mapMarkerForRestaurant(restaurant, map) {
     const google = window.google;
+    const image = {
+      url: '/assets/img/restaurant-icon.svg',
+      scaledSize: new google.maps.Size(50, 50)
+    };
     const marker = new google.maps.Marker({
       position: restaurant.latlng,
       title: restaurant.name,
       url: DBHelper.urlForRestaurant(restaurant),
+      icon: image,
       map, // map: map
       animation: google.maps.Animation.DROP
     });
