@@ -222,8 +222,10 @@ createRestaurantHTML = (restaurant) => {
   card.append(address);
 
   const more = document.createElement('a');
-  more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.setAttribute('role', 'button');
+  more.setAttribute('aria-label', 'Go to more info about this Restaurant');
+  more.innerHTML = 'View Details';
   card.append(more);
 
   return li;

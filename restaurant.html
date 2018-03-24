@@ -18,12 +18,13 @@
 <body class="inside">
   <!-- Beginning header -->
   <header>
+    <a href="#restaurant-container" class="skip-link">Skip to Maincontent →</a>
     <!-- Beginning nav -->
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul class="breadcrumb" id="breadcrumb">
+    <ul class="breadcrumb" id="breadcrumb" aria-label="breadcrumbs" role="navigation">
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -32,21 +33,21 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main class="maincontent">
+  <main class="maincontent" aria-label="content">
     <!-- Beginning map -->
     <section class="map-container review">
-      <div class="map" id="map"></div>
+      <div class="map" id="map" aria-hidden="true" tabindex="-1"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section class="restaurant-container" id="restaurant-container">
+    <section class="restaurant-container" id="restaurant-container" tabindex="-1" role="contentinfo">
       <h2 class="restaurant-name" id="restaurant-name"></h2>
       <div class="card__img rounded" id="restaurant-detail">
         <img id="restaurant-img">
         <p class="restaurant-cuisine fade-caption" id="restaurant-cuisine"></p>
       </div>
       <p class="restaurant-address" id="restaurant-address"></p>
-      <table class="restaurant-hours" id="restaurant-hours"></table>
+      <table class="restaurant-hours" id="restaurant-hours" summary="Information about Restaurant opening hours"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
@@ -59,7 +60,7 @@
 
   <!-- Beginning footer -->
   <footer class="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
   <!-- End footer -->
 

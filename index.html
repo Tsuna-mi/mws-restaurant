@@ -15,33 +15,36 @@
 
 <body>
   <header>
+    <a href="#filter" class="skip-link">Skip to Filter Section→</a>
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
-  <main class="maincontent">
+  <main class="maincontent" aria-label="content">
     <section class="map-container">
-      <div class="map" id="map"></div>
+      <div class="map" id="map" aria-hidden="true" role="application" tabindex="-1"></div>
     </section>
-    <section>
+    <section id="filter" tabindex="-1" role="search">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <div class="filter">
+          <label for="neighborhoods-select">Select neighborhood:</label>
           <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
-              <option value="all">All Neighborhoods</option>
-            </select>
-            <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-              <option value="all">All Cuisines</option>
-            </select>
+            <option value="all">All Neighborhoods</option>
+          </select>
+          <label for="cuisines-select">Select cuisine:</label>
+          <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+            <option value="all">All Cuisines</option>
+          </select>
         </div>
       </div>
-      <ul class="cards flex-layout" id="restaurants-list"></ul>
+      <ul class="cards flex-layout" id="restaurants-list" role="list"></ul>
     </section>
   </main>
 
   <footer class="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>

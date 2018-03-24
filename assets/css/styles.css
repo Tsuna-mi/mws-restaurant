@@ -24,7 +24,8 @@ body {
   font-size: 16px;
   background-color: #fdfdfd;
   margin: 0;
-  position:relative;
+  position: relative;
+  overflow-x: hidden;
 }
 
 img {
@@ -113,6 +114,22 @@ section {
   border-bottom-right-radius: 2em;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: orange;
+  color: white;
+  font-weight: 100;
+  padding: 5px 10px;
+  z-index: 100;
+}
+
+.skip-link:focus, .skip-link:hover {
+  top: 0;
+  color: white;
+}
+
 /* ============================ Navigation ============================ */
 nav {
   width: 100vw;
@@ -199,6 +216,7 @@ nav h1 a {
 
 .filter {
   display: flex;
+  overflow: hidden;
 }
 
 .filter-options select {
@@ -211,6 +229,12 @@ nav h1 a {
   margin: 10px;
   padding: 0 10px;
   width: 200px;
+}
+
+label {
+position: absolute;
+left: -500px;
+color: white;
 }
 
 /* ==================== Restaurant Listing - Cards ====================== */
@@ -455,7 +479,7 @@ nav h1 a {
   .cards .cards__item a {
     font-size: 1.2em;
   }
-}  
+}
 
 @media screen and (min-width: 650px) {
   nav h1 a {
