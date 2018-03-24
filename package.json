@@ -15,7 +15,10 @@
     "responsive",
     "accessible",
     "offline",
-    "offline-first"
+    "offline-first",
+    "udacity",
+    "google",
+    "nanodegree"
   ],
   "author": "Ana Gamito <belen_g_romero@hotmail.com>",
   "license": "MIT",
