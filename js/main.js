@@ -153,26 +153,26 @@ createRestaurantHTML = (restaurant) => {
   const sourceWebp2 = document.createElement('source');
   sourceWebp2.type = 'image/webp';
   sourceWebp2.srcset = `public/img/${restaurant.id}-l.webp 1x`;
-  sourceWebp2.media = `(min-width: 500px) and (max-width: 650px), 
+  sourceWebp2.media = `(min-width: 500px) and (max-width: 650px),
                        (min-width: 1500px) and (max-width: 2200px)`;
   picture.append(sourceWebp2);
 
   const sourceWebp3 = document.createElement('source');
   sourceWebp3.type = 'image/webp';
-  sourceWebp3.srcset = `public/img/${restaurant.id}-m.webp 1x, 
+  sourceWebp3.srcset = `public/img/${restaurant.id}-m.webp 1x,
                         public/img/${restaurant.id}-m@2x.webp 2x`;
-  sourceWebp3.media = `(min-width: 400px) and (max-width: 500px), 
-                       (min-width: 800px) and (max-width: 950px), 
+  sourceWebp3.media = `(min-width: 400px) and (max-width: 500px),
+                       (min-width: 800px) and (max-width: 950px),
                        (min-width: 1200px) and (max-width: 1500px)`;
   picture.append(sourceWebp3);
 
 
   const sourceWebp4 = document.createElement('source');
   sourceWebp4.type = 'image/webp';
-  sourceWebp4.srcset = `public/img/${restaurant.id}-s.webp 1x, 
+  sourceWebp4.srcset = `public/img/${restaurant.id}-s.webp 1x,
                         public/img/${restaurant.id}-s@2x.webp 2x`;
-  sourceWebp4.media = `(min-width: 320px) and (max-width: 400px), 
-                       (min-width: 650px) and (max-width: 800px), 
+  sourceWebp4.media = `(min-width: 320px) and (max-width: 400px),
+                       (min-width: 650px) and (max-width: 800px),
                        (min-width: 950px) and (max-width: 1200px)`;
   picture.append(sourceWebp4);
 
@@ -185,25 +185,25 @@ createRestaurantHTML = (restaurant) => {
   const sourceJpg2 = document.createElement('source');
   sourceJpg2.type = 'image/jpg';
   sourceJpg2.srcset = `public/img/${restaurant.id}-l.jpg 1x`;
-  sourceJpg2.media = `(min-width: 500px) and (max-width: 650px), 
+  sourceJpg2.media = `(min-width: 500px) and (max-width: 650px),
                       (min-width: 1500px) and (max-width: 2200px)`;
   picture.append(sourceJpg2);
 
   const sourceJpg3 = document.createElement('source');
   sourceJpg3.type = 'image/jpg';
-  sourceJpg3.srcset = `public/img/${restaurant.id}-m.jpg 1x, 
+  sourceJpg3.srcset = `public/img/${restaurant.id}-m.jpg 1x,
                        public/img/${restaurant.id}-m@2x.jpg 2x`;
-  sourceJpg3.media = `(min-width: 400px) and (max-width: 500px), 
-                      (min-width: 800px) and (max-width: 950px), 
+  sourceJpg3.media = `(min-width: 400px) and (max-width: 500px),
+                      (min-width: 800px) and (max-width: 950px),
                       (min-width: 1200px) and (max-width: 1500px)`;
   picture.append(sourceJpg3);
 
   const image = document.createElement('img');
   image.className = 'card__img rounded';
-  image.srcset = `public/img/${restaurant.id}-s.jpg 1x, 
+  image.srcset = `public/img/${restaurant.id}-s.jpg 1x,
                   public/img/${restaurant.id}-s@2x.jpg 2x`;
-  image.media = `(min-width: 320px) and (max-width: 400px), 
-                 (min-width: 650px) and (max-width: 800px), 
+  image.media = `(min-width: 320px) and (max-width: 400px),
+                 (min-width: 650px) and (max-width: 800px),
                  (min-width: 950px) and (max-width: 1200px)`;
   image.alt = `${restaurant.name} Restaurant image: ${restaurant.description}`;
   picture.append(image);
