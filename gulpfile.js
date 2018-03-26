@@ -2,7 +2,6 @@
 
 // serve (serve dev and watch files)
 // serve:dist (serve build files)
-// deploy (deploy app at github pages)
 // minify-js (js minify and sourcemaps)
 // minify-css (css minify and sourcemaps)
 // minify-html
@@ -19,7 +18,6 @@ const uglify = require('gulp-uglify-es').default;
 const minifycss = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
 const util = require('gulp-util');
-const ghPages = require('gulp-gh-pages');
 
 
 // File where the favicon markups are stored
@@ -70,14 +68,6 @@ gulp.task('serve:dist', () => {
   gulp.watch([src.dev.html, src.dev.css, src.dev.js]).on('change', reload);
 });
 
-gulp.task('deploy', () => {
-  gulp.src('./dist/**/*')
-    .pipe(ghPages({
-      force: true,
-      remoteUrl: 'git@github.com:Tsuna-mi/mws-restaurant.git',
-      branch: 'master'
-    }));
-});
 
 // minify-js
 gulp.task('minify-js', () => {

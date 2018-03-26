@@ -33,7 +33,6 @@
     "eslint-plugin-import": "^2.9.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.3",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^4.0.0",
     "gulp-responsive": "^2.9.0",
     "gulp-sourcemaps": "^2.6.4",
