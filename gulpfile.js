@@ -72,7 +72,11 @@ gulp.task('serve:dist', () => {
 
 gulp.task('deploy', () => {
   gulp.src('./dist/**/*')
-    .pipe(ghPages({ force: true }));
+    .pipe(ghPages({
+      force: true,
+      remoteUrl: 'git@github.com:Tsuna-mi/mws-restaurant.git',
+      branch: 'master'
+    }));
 });
 
 // minify-js
