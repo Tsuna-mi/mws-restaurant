@@ -2,6 +2,8 @@
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
+The porpouse of this repo it's to accomplish the 3 stages of Mobile Web Specialist Udacity Nanodegree.
+
 ## Project Overview: Stage 1
 
 For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a **mobile-ready web application**. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
@@ -55,10 +57,22 @@ After that, you need to have a simple HTTP server to serve up the site files on 
 Or you can run other server of your preference. I usually work with npm packages, for that I use **http-server** node package. Easy to install with: `npm install http-server -g`. To run, inside the project directory, if you don't need more options: `http-server -p 8000`
 See the different options at: [http-server](https://www.npmjs.com/package/http-server).
 
+If you prefer, you can run:
+````
+gulp serve
+````
+to run a **dev version** of the application with optimised images, or
+
+````
+gulp serve:dist
+````
+to run a **distribution version** of the application with minified files and optimised images.
+
+(At gulpfile there are other tasks listed you can use)
+
 With your server running, visit the site: `http://localhost:8000`.
 
-
-
+----
 
 ## *Thanks for visiting this repo! I hope you enjoy* :D
 
