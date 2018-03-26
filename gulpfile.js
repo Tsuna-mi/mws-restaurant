@@ -16,7 +16,7 @@ const responsive = require('gulp-responsive');
 const webp = require('gulp-webp');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify-es').default;
-const minifycss = require('gulp-minify-css');
+const minifycss = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
 const util = require('gulp-util');
 const ghPages = require('gulp-gh-pages');
@@ -146,6 +146,7 @@ gulp.task('images', () => {
       withMetadata: false,
       max: true
     }))
+    .pipe(gulp.dest(src.dev.img))
     .pipe(gulp.dest(src.dist.img));
 });
 
@@ -153,5 +154,6 @@ gulp.task('images', () => {
 gulp.task('webp', () => {
   gulp.src(`${src.dev.img}*.jpg`)
     .pipe(webp())
+    .pipe(gulp.dest(src.dev.img))
     .pipe(gulp.dest(src.dist.img));
 });
