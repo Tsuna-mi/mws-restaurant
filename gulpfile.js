@@ -2,6 +2,7 @@
 
 // serve (serve dev and watch files)
 // serve:dist (serve build files)
+// deploy (deploy app at github pages)
 // minify-js (js minify and sourcemaps)
 // minify-css (css minify and sourcemaps)
 // minify-html
@@ -18,6 +19,8 @@ const uglify = require('gulp-uglify-es').default;
 const minifycss = require('gulp-minify-css');
 const htmlmin = require('gulp-htmlmin');
 const util = require('gulp-util');
+const ghPages = require('gulp-gh-pages');
+
 
 // File where the favicon markups are stored
 const reload = browserSync.reload;
@@ -67,6 +70,10 @@ gulp.task('serve:dist', () => {
   gulp.watch([src.dev.html, src.dev.css, src.dev.js]).on('change', reload);
 });
 
+gulp.task('deploy', () => {
+  gulp.src('./dist/**/*')
+    .pipe(ghPages({ force: true }));
+});
 
 // minify-js
 gulp.task('minify-js', () => {
