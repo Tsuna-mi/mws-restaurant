@@ -149,7 +149,7 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`public/img/${restaurant.photograph}`);
+    return (`./assets/img/${restaurant.photograph}`);
   }
 
   /**
@@ -158,7 +158,7 @@ class DBHelper {
   static mapMarkerForRestaurant(restaurant, map) {
     const google = window.google;
     const image = {
-      url: '/assets/img/restaurant-icon.svg',
+      url: './assets/img/restaurant-icon.svg',
       scaledSize: new google.maps.Size(50, 50)
     };
     const marker = new google.maps.Marker({

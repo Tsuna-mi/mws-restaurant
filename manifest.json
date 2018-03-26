@@ -12,27 +12,27 @@
   "start_url": "./index.html",
   "icons": [
     {
-      "src": "assets/img/restaurant-icon.svg",
+      "src": "./dist/assets/imgrestaurant-icon.svg",
       "type": "image/svg",
       "sizes": "512x512"
     },{
-      "src": "assets/img/restaurant-icon-32.png",
+      "src": "./dist/assets/imgrestaurant-icon-32.png",
       "type": "image/png",
       "sizes": "32x32"
     },{
-      "src": "assets/img/restaurant-icon-64.png",
+      "src": "./dist/assets/imgrestaurant-icon-64.png",
       "type": "image/png",
       "sizes": "64x64"
     },{
-      "src": "assets/img/restaurant-icon-256.png",
+      "src": "./dist/assets/imgrestaurant-icon-256.png",
       "type": "image/png",
       "sizes": "256x256"
     },{
-      "src": "assets/img/restaurant-icon-512.png",
+      "src": "./dist/assets/imgrestaurant-icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     },{
-      "src": "assets/img/favico.ico",
+      "src": "./dist/assets/imgfavico.ico",
       "type": "image/ico",
       "sizes": "16x16"
     }
