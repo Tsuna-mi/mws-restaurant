@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "dir": "ltr",
-  "name": "Restaurant Reviews App",
-  "short_name": "MWS-RestRev",
+  "name": "MWS Restaurant Reviews App",
+  "short_name": "MWS RestRev",
   "description": "Restaurant Reviews App for Udacity Mobile Web Specialist Nanodegree",
   "theme_color": "#ffa500",
   "background_color": "#f3f3f3",
@@ -12,27 +12,27 @@
   "start_url": "./index.html",
   "icons": [
     {
-      "src": "./dist/assets/imgrestaurant-icon.svg",
+      "src": "./assets/img/restaurant-icon.svg",
       "type": "image/svg",
       "sizes": "512x512"
     },{
-      "src": "./dist/assets/imgrestaurant-icon-32.png",
+      "src": "./assets/img/restaurant-icon-32.png",
       "type": "image/png",
       "sizes": "32x32"
     },{
-      "src": "./dist/assets/imgrestaurant-icon-64.png",
+      "src": "./assets/img/restaurant-icon-64.png",
       "type": "image/png",
       "sizes": "64x64"
     },{
-      "src": "./dist/assets/imgrestaurant-icon-256.png",
+      "src": "./assets/img/restaurant-icon-256.png",
       "type": "image/png",
       "sizes": "256x256"
     },{
-      "src": "./dist/assets/imgrestaurant-icon-512.png",
+      "src": "./assets/img/restaurant-icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     },{
-      "src": "./dist/assets/imgfavico.ico",
+      "src": "./assets/imgfavico.ico",
       "type": "image/ico",
       "sizes": "16x16"
     }
