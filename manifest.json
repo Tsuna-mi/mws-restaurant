@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "MWS Restaurant Reviews App",
+  "short_name": "MWS RestRev",
+  "description": "Restaurant Reviews App for Udacity Mobile Web Specialist Nanodegree",
+  "theme_color": "#ffa500",
+  "background_color": "#f3f3f3",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "./assets/img/restaurant-icon.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    },{
+      "src": "./assets/img/restaurant-icon-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },{
+      "src": "./assets/img/restaurant-icon-64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },{
+      "src": "./assets/img/restaurant-icon-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },{
+      "src": "./assets/img/restaurant-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },{
+      "src": "./assets/imgfavico.ico",
+      "type": "image/ico",
+      "sizes": "16x16"
+    }
+  ],
+  "serviceworker": {
+    "src": "sw.js",
+    "scope": "/",
+    "update_via_cache": "imports"
+  }
+}
