@@ -8,7 +8,11 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 8000; // Change this to your server port
-    return `http://localhost:${port}/assets/data/restaurants.json`;
+    const filePath = '/assets/data/restaurants.json';
+    const url = window.location.hostname === 'tsuna-mi.github.io' 
+                 ? filePath 
+                 : `htttp://localhost:${port}${filePath}`;
+    return url;
   }
 
   /**
