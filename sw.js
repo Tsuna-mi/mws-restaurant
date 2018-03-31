@@ -1,4 +1,4 @@
-const version = '1.0.13';
+const version = '1.0.14';
 const staticCacheName = 'msw-restrev-';
 const staticCache = staticCacheName + version;
 const contentImgsCache = `${staticCacheName}imgs`;
@@ -28,13 +28,13 @@ self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(staticCache).then((cache) => {
     cache.addAll([
       '/',
-      '/js/dbhelper.js',
-      '/js/main.js',
-      '/js/restaurant_info.js',
-      '/restaurant.html',
-      '/assets/data/restaurants.json',
-      '/manifest.json',
-      '/assets/css/styles.css',
+      'js/dbhelper.js',
+      'js/main.js',
+      'js/restaurant_info.js',
+      'restaurant.html',
+      'assets/data/restaurants.json',
+      'manifest.json',
+      'assets/css/styles.css',
       'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css',
       'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
       'https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2',
