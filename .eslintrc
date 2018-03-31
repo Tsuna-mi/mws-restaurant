@@ -2,6 +2,7 @@
   "extends": "airbnb-base",
   "rules": {
     "comma-dangle": [2, "never"],
+    "no-plusplus": "off",
     "no-restricted-globals": ["error", "event", "fdescribe"],
     "prefer-destructuring": "off",
     "no-param-reassign": "off",

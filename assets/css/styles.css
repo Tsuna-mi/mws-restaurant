@@ -266,12 +266,13 @@ color: white;
 
 .cards .cards__item {
   background-color: #fff;
-  min-height: 75vh;
   margin-bottom: 30px;
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 
@@ -288,6 +289,9 @@ color: white;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
   overflow: hidden;
 }
 
@@ -322,7 +326,6 @@ color: white;
   font-weight: 300;
   letter-spacing: 2px;
   line-height: 1.3em;
-  min-height: 10vh;
   margin: 20px 0;
   text-transform: uppercase;
 }
@@ -330,7 +333,6 @@ color: white;
 
 .cards p {
   margin: 0;
-  min-height: 7vh;
 }
 
 
@@ -340,7 +342,7 @@ color: white;
   color: #fff;
   display: inline-block;
   font-size: 1em;
-  margin: 35px 15px 0;
+  margin: 60px 15px 0;
   padding: 12px 30px;
   text-align: center;
   text-decoration: none;
@@ -351,12 +353,12 @@ color: white;
 
 .restaurant-name {
   color: #f18200;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 200;
   letter-spacing: 0;
   margin: 15px 0 30px;
   text-transform: uppercase;
-  line-height: 1.6em;
+  line-height: 2.2em;
 }
 
 
@@ -445,9 +447,9 @@ color: white;
 }
 
 
-.reviews-container h2 {
+.reviews-container h3 {
   color: #f58500;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1vh;
@@ -484,7 +486,7 @@ color: white;
 
 
 .top .date {
-  font-size: 0.9em;
+  font-size: 0.8topem;
   font-style: oblique;
   padding-left: 8px;
   color: lightgray;
@@ -583,6 +585,10 @@ color: white;
     max-width: 32%;
   }
 
+  .card__title {
+    min-height: auto;
+  }
+
   .maincontent {
     flex-direction: row;
     flex-wrap: wrap;
@@ -622,12 +628,41 @@ color: white;
 }
 
 @media screen and (min-width: 1030px) {
+  .restaurant-container .card__img {
+    margin: 0;
+  }
+
   .restaurant-hours tr {
     width: calc(100%/7);
   }
 
   .cards__item,
   .reviews__item {
-    max-width: 30%;
+    max-width: calc(35% - 2em);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .maincontent {
+    font-size: 120%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .maincontent {
+    font-size: 135%;
+  }
+
+  .cards__item {
+    max-width: calc(25% - 2em);
+  }
+  .reviews__item {
+    max-width: calc(700px - 3em);
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .cards__item {
+    max-width: calc(19% - 6em);
   }
 }
