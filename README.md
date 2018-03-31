@@ -45,17 +45,29 @@ into a site that looks like this:
 **Cache the static site for offline use**. Using Cache API and a ServiceWorker, cache the data for the website so that any page (including images) that has been visited is accessible offline.
 
 
-### What do you need to run the Application?
 
-After download the repo, you need to run `npm install` to install the dependencies needed.
+------
+## Installation
+Clone the GitHub repository and use **Npm** to install dependencies.
 
-After that, you need to have a simple HTTP server to serve up the site files on your local computer. If you have Python installed on your machine (check with `python -V`), you can run: 
+````
+$ git clone https://github.com/Tsuna-mi/mws-restaurant.git
+$ cd mws-restaurant
+$ npm install
+````
+## Usage
+
+You need to have a simple HTTP server to serve up the site files on your local computer. If you have Python installed on your machine (check with `python -V`), you can run: 
 
 - For python 2.x: `python -m SimpleHTTPServer 8000` (or with other port)
 - For python 3.x: `python3 -m http.server 8000` (or with other port)
 
 Or you can run other server of your preference. I usually work with npm packages, for that I use **http-server** node package. Easy to install with: `npm install http-server -g`. To run, inside the project directory, if you don't need more options: `http-server -p 8000`
 See the different options at: [http-server](https://www.npmjs.com/package/http-server).
+
+Then you can open: 'http://localhost:8000/'
+
+----
 
 If you prefer, you can run:
 ````
@@ -72,8 +84,13 @@ to run a **distribution version** of the application with minified files and opt
 
 With your server running, visit the site: `http://localhost:8000`.
 
+
+## License
+
+The contents of this repository are covered under the [MIT License](LICENSE).
+
 ----
 
-## *Thanks for visiting this repo! I hope you enjoy* :D
+### *Thanks for visiting this repo! I hope you enjoy* :D
 
 
