@@ -628,10 +628,6 @@ color: white;
 }
 
 @media screen and (min-width: 1030px) {
-  .maincontent {
-    font-size: 120%;
-  }
-
   .restaurant-container .card__img {
     margin: 0;
   }
@@ -643,6 +639,12 @@ color: white;
   .cards__item,
   .reviews__item {
     max-width: calc(35% - 2em);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .maincontent {
+    font-size: 120%;
   }
 }
 
