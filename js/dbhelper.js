@@ -10,7 +10,7 @@ class DBHelper {
     const filePath = 'assets/data/restaurants.json';
     const url = window.location.hostname.includes('localhost')
       ? `${window.location.protocol}//${window.location.hostname}:${window.location.port}/${filePath}`
-      : `${window.location.protocol}//${window.location.href}${filePath}`
+      : `${window.location.href}${filePath}`
     return url;
   }
 
