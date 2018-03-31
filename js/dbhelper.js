@@ -8,7 +8,9 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const filePath = '/assets/data/restaurants.json';
-    const url = `${window.location.protocol}//${window.location.hostname}:${window.location.port}${filePath}`;
+    const url = window.location.hostname.includes('localhost')
+      ? `${window.location.protocol}//${window.location.hostname}:${window.location.port}${filePath}`
+      : `${window.location.protocol}//${window.location.hostname}${filePath}`
     return url;
   }
 
