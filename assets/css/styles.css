@@ -178,6 +178,10 @@ nav h1 a {
   margin: 0;
 }
 
+.breadcrumb ol {
+  padding: 0;
+}
+
 /* Display list items side by side */
 .breadcrumb li {
   display: inline;
