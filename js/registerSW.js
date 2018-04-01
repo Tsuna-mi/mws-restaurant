@@ -6,7 +6,7 @@ if (navigator.serviceWorker) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js', { scope: './' })
       .then((registration) => {
-        console.log('SW registered!');
+        console.log('SW registration successful at scope', registration.scope);
         let sw;
         if (registration.installing) {
           sw = registration.installing;
