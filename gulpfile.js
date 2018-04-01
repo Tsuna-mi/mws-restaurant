@@ -71,11 +71,18 @@ gulp.task('serve:dist', () => {
 
 // minify-js
 gulp.task('minify-js', () => {
+  // minify js files and create sourcemaps
   gulp.src(src.dev.js)
     .pipe(sourcemaps.init({ identityMap: true }))
     .pipe(uglify())
     .pipe(sourcemaps.write('./maps', { includeContent: false, sourceRoot: src.dev.js }))
     .pipe(gulp.dest(src.dist.js));
+  // minify sw and create source map
+  gulp.src('./sw.js')
+    .pipe(sourcemaps.init({ identityMap: true }))
+    .pipe(uglify())
+    .pipe(sourcemaps.write('./maps', { includeContent: false, sourceRoot: './' }))
+    .pipe(gulp.dest(src.dist.html));
 });
 
 
